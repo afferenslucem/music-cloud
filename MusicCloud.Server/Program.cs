@@ -1,3 +1,6 @@
+using MusicCloud.Server.FileStorage;
+using MusicCloud.Server.Music;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
@@ -15,6 +18,9 @@ builder.Services.AddCors(options =>
             policyBuilder.AllowAnyMethod();
         })
 );
+
+builder.Services.AddScoped<IMusicManager, MusicManager>();
+builder.Services.AddScoped<IFileStorage, FileStorage>();
 
 
 var app = builder.Build();

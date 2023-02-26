@@ -1,0 +1,9 @@
+POST http://localhost:5255/api/Music
+Content-Type: multipart/form-data; boundary=MfnBoundry
+
+--MfnBoundry
+Content-Disposition: form-data; name="files"; filename="01. Свой дом.mp3"
+Content-Type: audio/mpeg
+
+< './test-data/01. Свой дом.mp3'
+--MfnBoundry--

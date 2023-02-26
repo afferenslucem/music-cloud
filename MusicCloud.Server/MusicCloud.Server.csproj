@@ -1,9 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <ItemGroup>
-    <ProjectReference Include="..\MusicCloud.Models\MusicCloud.Models.csproj" />
-    <ProjectReference Include="..\MusicCloud.DataStorage\MusicCloud.DataStorage.csproj" />
-    <ProjectReference Include="..\MusicCloud.FileStorage\MusicCloud.FileStorage.csproj" />
   </ItemGroup>
 
   <ItemGroup>
