@@ -1,3 +1,4 @@
+using MusicCloud.Server.DataStorage;
 using MusicCloud.Server.FileStorage;
 using MusicCloud.Server.Music;
 
@@ -21,6 +22,7 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddScoped<IMusicManager, MusicManager>();
 builder.Services.AddScoped<IFileStorage, FileStorage>();
+builder.Services.AddScoped<IMusicStorage, MusicStorage>();
 
 
 var app = builder.Build();
